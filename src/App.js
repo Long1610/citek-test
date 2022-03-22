@@ -35,7 +35,7 @@ function App() {
 
   const QuoteComponent = ({ text, attribution }) => {
     return (
-      <div>
+      <div className="quote-block">
         <p className="text-block">{text}</p>
         <p className="text-block">{attribution}</p>
       </div>

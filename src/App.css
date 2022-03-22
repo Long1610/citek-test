@@ -56,3 +56,15 @@
   width: 500px;
   height: 300px;
 }
+
+.quote-block {
+  margin: auto;
+  width: 35%;
+  border-left: 5px solid blue;
+  padding-left: 10px;
+}
+
+.quote-block p:first-child {
+  font-weight: 700;
+  font-style: italic;
+}
