@@ -19,7 +19,6 @@ function App() {
     fetdata();
   }, [fetdata]);
 
-
   const TextComponent = ({ text }) => {
     return <p className="text-block">{text}</p>;
   };
@@ -27,7 +26,7 @@ function App() {
   const ImageComponent = ({ captionText, url }) => {
     return (
       <div className="image-block">
-        <img src={url} alt=""/>
+        <img src={url} alt="" />
         <p className="text-block">{captionText}</p>
       </div>
     );
@@ -80,11 +79,9 @@ function App() {
       <div className="wrapper-button">
         <button onClick={fetdata}>Toggle Button</button>
       </div>
-      <ol>
-        {dataToggle?.map((x, index) => {
-          return renderComponent(x);
-        })}
-      </ol>
+      {dataToggle?.map((x, index) => {
+        return renderComponent(x);
+      })}
     </div>
   );
 }
