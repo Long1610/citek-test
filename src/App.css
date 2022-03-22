@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+  padding: 10px 20px;
 }
 
 .App-logo {
@@ -35,4 +36,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.author span:first-child {
+  font-weight: 700;
+}
+
+.line {
+  border-bottom: 0.7px solid black;
+  height: 1px;
+  margin: 15px 0px;
+}
+
+.image-block {
+  text-align: center;
+}
+
+.image-block img {
+  width: 500px;
+  height: 300px;
 }
